@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Someone Special ♡</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+<nav class="navbar">
+  <a href="#home" class="logo">For You ♡</a>
+  <div class="nav-links">
+    <a href="#bouquet">🌸 Bouquet</a>
+    <a href="#letter">💌 Letter</a>
+    <a href="#birthday">🎁 Birthday</a>
+  </div>
+</nav>
+
+<!-- =====================================================
+     HOME
+===================================================== -->
+<header id="home" class="hero">
+  <p class="eyebrow">A little corner made just for you</p>
+  <h1>Something Special<br>For Someone Special ♡</h1>
+  <p class="hero-text">Choose a little surprise and make it yours.</p>
+  <a href="#choices" class="main-button">Explore the surprises ↓</a>
+</header>
+
+<!-- =====================================================
+     CHOICES
+===================================================== -->
+<main id="choices" class="main-container">
+<section class="choices-section">
+
+  <div class="section-heading">
+    <p class="eyebrow">Choose your surprise</p>
+    <h2>What would you like to create?</h2>
+    <p>Each one is a little different.</p>
+  </div>
+
+  <div class="choice-grid">
+
+    <a href="#bouquet" class="choice-card">
+      <div class="choice-icon">🌷</div>
+      <span class="choice-number">01</span>
+      <h3>Make a Bouquet</h3>
+      <p>Pick flowers, wrapping, ribbon and add a little note.</p>
+      <span class="choice-arrow">Create →</span>
+    </a>
+
+    <a href="#letter" class="choice-card">
+      <div class="choice-icon">💌</div>
+      <span class="choice-number">02</span>
+      <h3>Write a Letter</h3>
+      <p>Write something from the heart and put it inside an envelope.</p>
+      <span class="choice-arrow">Write →</span>
+    </a>
+
+    <a href="#birthday" class="choice-card">
+      <div class="choice-icon">🎁</div>
+      <span class="choice-number">03</span>
+      <h3>Birthday Surprise</h3>
+      <p>Cake, gifts, memories, little notes and one final surprise.</p>
+      <span class="choice-arrow">Open →</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- =====================================================
+     BOUQUET
+===================================================== -->
+<section id="bouquet" class="page-section">
+  <div class="section-heading">
+    <p class="eyebrow">Surprise 01</p>
+    <h2>Create a Little Bouquet 🌸</h2>
+    <p>Choose every little detail of your bouquet.</p>
+  </div>
+
+  <!-- FLOWERS -->
+  <div class="builder-card">
+    <h3>🌷 Flowers</h3>
+    <div class="options-grid">
+      <div class="item active" data-emoji="🤍">
+        <img src="https://storage.googleapis.com/regalflowers-cdn-staging/blog/img-2024-07-FRESH-CUT-WHITE-ROSE.jpg" alt="White Rose">
+        <span>White Rose</span>
+      </div>
+      <div class="item" data-emoji="🌹">
+        <img src="https://images.unsplash.com/photo-1688372514973-0dcee6a3175e?fm=jpg&q=60&w=3000&auto=format&fit=crop" alt="Red Rose">
+        <span>Red Rose</span>
+      </div>
+      <div class="item" data-emoji="🌷">
+        <img src="https://static.vecteezy.com/system/resources/previews/047/443/943/non_2x/a-single-blue-color-tulip-flower-png.png" alt="Blue Tulip">
+        <span>Blue Tulip</span>
+      </div>
+      <div class="item" data-emoji="🌻">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Sunflower_sky_backdrop.jpg/250px-Sunflower_sky_backdrop.jpg" alt="Sunflower">
+        <span>Sunflower</span>
+      </div>
+      <div class="item" data-emoji="🌼">
+        <div class="emoji-flower">🌼</div>
+        <span>Daisy</span>
+      </div>
+      <div class="item" data-emoji="🌸">
+        <div class="emoji-flower">🌸</div>
+        <span>Cherry Blossom</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- WRAPPING -->
+  <div class="builder-card">
+    <h3>🎁 Wrapping</h3>
+    <div class="color-options">
+      <button class="color-button active" data-color="#f2a0c0">Pink</button>
+      <button class="color-button" data-color="#fdfdfd">White</button>
+      <button class="color-button" data-color="#222222">Black</button>
+      <button class="color-button" data-color="#c9b8dd">Lavender</button>
+      <button class="color-button" data-color="#7fa8e0">Blue</button>
+    </div>
+  </div>
+
+  <!-- RIBBON -->
+  <div class="builder-card">
+    <h3>🎀 Ribbon</h3>
+    <div class="ribbon-options">
+      <button class="ribbon-button active" data-color="#e85d8a">🎀 Pink</button>
+      <button class="ribbon-button" data-color="#4a75c9">🎀 Blue</button>
+      <button class="ribbon-button" data-color="#222222">🎀 Black</button>
+      <button class="ribbon-button" data-color="#fdfdfd">🎀 White</button>
+    </div>
+  </div>
+
+  <!-- BOUQUET NOTE -->
+  <div class="builder-card">
+    <h3>💌 Little Note</h3>
+    <textarea class="bouquet-note" maxlength="180" placeholder="Write a little message..."></textarea>
+    <div class="counter">0 / 180</div>
+  </div>
+
+  <!-- BOUQUET PREVIEW -->
+  <div class="bouquet-preview">
+    <p class="eyebrow">Your bouquet</p>
+    <div class="bouquet-art">💐</div>
+    <h3 class="bouquet-title">Your little bouquet</h3>
+    <button class="main-button" id="createBouquetBtn">Create Bouquet ♡</button>
+  </div>
+</section>
+
+<!-- =====================================================
+     LETTER
+===================================================== -->
+<section id="letter" class="page-section letter-page">
+  <div class="section-heading">
+    <p class="eyebrow">Surprise 02</p>
+    <h2>A Little Letter 💌</h2>
+    <p>Write something from the heart and keep it inside a little envelope.</p>
+  </div>
+
+  <!-- ENVELOPE -->
+  <div class="envelope-area">
+    <div class="envelope" id="mainEnvelope">
+      <div class="letter-paper">
+        <p class="letter-preview-text">A little something...</p>
+        <div class="paper-lines"></div>
+      </div>
+      <div class="envelope-flap"></div>
+      <div class="envelope-front"></div>
+      <div class="stamp"><span>♡</span><small>FOR YOU</small></div>
+      <div class="wax-seal">♡</div>
+    </div>
+
+    <p class="envelope-hint">Your letter is waiting inside ♡</p>
+    <button class="main-button" id="openLetterBtn">Open Letter</button>
+  </div>
+
+  <!-- WRITE LETTER -->
+  <div class="builder-card letter-form">
+    <h3>✍️ Write Your Letter</h3>
+
+    <label>To</label>
+    <input type="text" id="letterTo" placeholder="Their name...">
+
+    <label>Your message</label>
+    <textarea class="letter-message" maxlength="1000" placeholder="Dear you...
+
+Write something from your heart ♡"></textarea>
+    <div class="counter">0 / 1000</div>
+
+    <label>From</label>
+    <input type="text" id="letterFrom" placeholder="Your name...">
+  </div>
+
+  <!-- STAMP -->
+  <div class="builder-card">
+    <h3>💗 Choose a Stamp</h3>
+    <div class="stamp-options">
+      <button class="stamp-option active" data-emoji="♡">♡<small>Love</small></button>
+      <button class="stamp-option" data-emoji="🌸">🌸<small>Flower</small></button>
+      <button class="stamp-option" data-emoji="⭐">⭐<small>Star</small></button>
+      <button class="stamp-option" data-emoji="🎀">🎀<small>Sweet</small></button>
+    </div>
+  </div>
+
+  <button class="main-button full-button" id="sealLetterBtn">Seal My Letter 💌</button>
+</section>
+
+<!-- =====================================================
+     BIRTHDAY
+===================================================== -->
+<section id="birthday" class="page-section birthday-page">
+  <div class="section-heading">
+    <p class="eyebrow">Surprise 03</p>
+    <h2>Happy Birthday 🎂</h2>
+    <p>There are a few little surprises waiting for you.</p>
+  </div>
+
+  <!-- CAKE -->
+  <div class="cake-area">
+    <div class="sparkles">✦ ✧ ✦</div>
+    <div class="cake">
+      <div class="candle">
+        <div class="flame">🔥</div>
+        <div class="candle-stick"></div>
+      </div>
+      <div class="cake-top"></div>
+      <div class="cake-body">
+        <div class="cream"></div>
+        <div class="cake-hearts">♡　♡　♡</div>
+      </div>
+      <div class="cake-plate"></div>
+    </div>
+    <h3>Make a wish ♡</h3>
+    <p>Before opening your gifts...</p>
+  </div>
+
+  <!-- THREE GIFTS -->
+  <div class="gifts-area">
+    <div class="section-heading">
+      <p class="eyebrow">Three little surprises</p>
+      <h2>Choose a Gift 🎁</h2>
+    </div>
+
+    <div class="gifts-grid">
+      <div class="gift-card">
+        <div class="gift-icon">🎁</div>
+        <span class="gift-number">GIFT 01</span>
+        <h3>Little Memories</h3>
+        <p>A tiny scrapbook filled with six special memories.</p>
+        <button class="secondary-button" data-target="#scrapbook">Open Gift →</button>
+      </div>
+
+      <div class="gift-card">
+        <div class="gift-icon">🎁</div>
+        <span class="gift-number">GIFT 02</span>
+        <h3>Things I Love</h3>
+        <p>Seven little notes about the things I love about you.</p>
+        <button class="secondary-button" data-target="#lovenotes">Open Gift →</button>
+      </div>
+
+      <div class="gift-card">
+        <div class="gift-icon">🎁</div>
+        <span class="gift-number">GIFT 03</span>
+        <h3>One More Surprise</h3>
+        <p>There's something else waiting for you...</p>
+        <button class="secondary-button" data-target="#finalsurprise">Open Gift →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRAPBOOK -->
+  <div class="surprise-card" id="scrapbook">
+    <p class="eyebrow">Gift 01</p>
+    <h2>Little Scrapbook 📖</h2>
+    <p>Six little moments worth remembering.</p>
+
+    <div class="photo-grid">
+      <div class="photo">Photo 01</div>
+      <div class="photo">Photo 02</div>
+      <div class="photo">Photo 03</div>
+      <div class="photo">Photo 04</div>
+      <div class="photo">Photo 05</div>
+      <div class="photo">Photo 06</div>
+    </div>
+    <p class="scrapbook-caption">Little moments, big memories ♡</p>
+  </div>
+
+  <!-- LOVE NOTES -->
+  <div class="surprise-card" id="lovenotes">
+    <p class="eyebrow">Gift 02</p>
+    <h2>Things I Love About You 💗</h2>
+    <p>Tap the little notes to discover them one by one.</p>
+
+    <div class="love-notes">
+      <button>♡<small>01</small></button>
+      <button>✦<small>02</small></button>
+      <button>🌸<small>03</small></button>
+      <button>♡<small>04</small></button>
+      <button>✧<small>05</small></button>
+      <button>🌷<small>06</small></button>
+      <button>♡<small>07</small></button>
+    </div>
+
+    <div class="discovered">♡ 0 / 7 little secrets discovered</div>
+  </div>
+
+  <!-- FINAL LETTER -->
+  <div class="final-surprise" id="finalsurprise">
+    <div class="final-icon">💌</div>
+    <p class="eyebrow">And finally...</p>
+    <h2>A Letter For You</h2>
+    <p>After all the little surprises, there are a few words waiting for you.</p>
+    <a href="#letter" class="main-button">Read the Letter →</a>
+  </div>
+
+</section>
+</main>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+<footer>Made with love, just for you ♡</footer>
+
+<script src="script.js"></script>
+</body>
+  </html>
